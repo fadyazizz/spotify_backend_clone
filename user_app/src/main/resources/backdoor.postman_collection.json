@@ -1,0 +1,392 @@
+{
+	"info": {
+		"_postman_id": "0b1c8e42-f68e-4d49-a0d9-c281d0c7e1b6",
+		"name": "backdoor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "freeze",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "resume",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "setmaxThreadCount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"maxNumber\":20\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9090/command/setMaxThreadsCount",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9090",
+					"path": [
+						"command",
+						"setMaxThreadsCount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setmaxDbConnectionCount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"maxNumber\":20\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9090/command/etMaxDbConnectionsCount",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9090",
+					"path": [
+						"command",
+						"etMaxDbConnectionsCount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addCommand",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/vm/Desktop/NewFolder/finalLoadTesting/Final-Destination/user_app/target/classes/scalable/com/user/commands/Test.class"
+						},
+						{
+							"key": "commandName",
+							"value": "Test",
+							"type": "default"
+						},
+						{
+							"key": "className",
+							"value": "Test",
+							"type": "default"
+						},
+						{
+							"key": "validationAttributes",
+							"value": "a",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "commandPath",
+							"value": "scalable.com.user.commands.Test",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9090/command/addCommand",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9090",
+					"path": [
+						"command",
+						"addCommand"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCommand",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/vm/Desktop/NewFolder/finalDestination (copy 1)/Final-Destination/user_app/target/classes/scalable/com/user/commands/Test.class"
+						},
+						{
+							"key": "commandName",
+							"value": "Test",
+							"type": "default"
+						},
+						{
+							"key": "className",
+							"value": "Test",
+							"type": "default"
+						},
+						{
+							"key": "validationAttributes",
+							"value": "fady",
+							"type": "default"
+						},
+						{
+							"key": "commandPath",
+							"value": "scalable.com.user.commands.Test",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9090/command/addCommand",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9090",
+					"path": [
+						"command",
+						"addCommand"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCommand",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/vm/Desktop/NewFolder/finalDestination (copy 1)/Final-Destination/user_app/target/classes/scalable/com/user/commands/Test.class"
+						},
+						{
+							"key": "commandName",
+							"value": "Test",
+							"type": "default"
+						},
+						{
+							"key": "className",
+							"value": "Test",
+							"type": "default"
+						},
+						{
+							"key": "validationAttributes",
+							"value": "fady",
+							"type": "default"
+						},
+						{
+							"key": "commandPath",
+							"value": "scalable.com.user.commands.Test",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9090/command/addCommand",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9090",
+					"path": [
+						"command",
+						"addCommand"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateClassVersion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"className\":\"SignUp\",\n    \"commandName\":\"SignUp\",\n    \"commadnPath\":\"scalable.com.user.commands.SignUp\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9090/command/updateClassVersion",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9090",
+					"path": [
+						"command",
+						"updateClassVersion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getClassVersion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"className\":\"SignUp\"\n    \n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9090/command/getClassVersion",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9090",
+					"path": [
+						"command",
+						"getClassVersion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setLoggingLevel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"loggingLevel\":\"severe\"\n    \n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9090/command/setLoggingLevel",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9090",
+					"path": [
+						"command",
+						"setLoggingLevel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getLoggingLevel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"className\":\"SignUp\"\n    \n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9090/command/getClassVersion",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9090",
+					"path": [
+						"command",
+						"getClassVersion"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
